@@ -1,0 +1,158 @@
+:root {
+  --primary-color: #12171e;
+  --secondary-color: #ee7400;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* NAVBAR  */
+
+.logo {
+  width: 75px;
+}
+
+header {
+  position: absolute;
+  z-index: 9999;
+  width: 100%;
+  padding: 0.2rem 0;
+  top: 0;
+  left: 0;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.nav-item {
+  text-decoration: none;
+  color: white;
+  font-weight: 100;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+li {
+  border-bottom: 2px solid rgba(255, 255, 255, 0);
+  padding: 1rem 1rem;
+}
+
+li:hover {
+  border-bottom: 2px solid var(--secondary-color);
+}
+
+li:active {
+  background-color: var(--secondary-color);
+}
+
+.search:hover {
+  border-bottom: #12171e00;
+}
+
+.search:active {
+  background-color: rgba(245, 245, 220, 0);
+}
+
+/* MAIN */
+
+main {
+  position: relative;
+  z-index: 1;
+  background-color: var(--primary-color);
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.parallax {
+  pointer-events: none;
+  transition: 0.35s cubic-bezier(0.2, 0.49, 0.32, 0.99);
+}
+
+.bg-img {
+  position: absolute;
+  z-index: 2;
+  width: 3000px;
+  top: calc(50% - 10px);
+  left: calc(50% - 300px);
+  transform: translate(-50%, -50%);
+}
+
+.stars-img {
+  position: absolute;
+  z-index: 3;
+  width: 1300px;
+  top: calc(50% - 265px);
+  left: calc(50% + 10px);
+  transform: translate(-50%, -50%);
+}
+
+.mountain-img {
+  position: absolute;
+  z-index: 4;
+  width: 600px;
+  top: calc(50% + 10px);
+  left: calc(50% + 10px);
+  transform: translate(-50%, -50%);
+}
+
+/* ____________________ */
+.text {
+  position: absolute;
+  z-index: 9;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+}
+
+.text h2 {
+  font-weight: 100;
+  font-size: 8rem;
+  line-height: 0.75;
+}
+
+.text h1 {
+  font-weight: 800;
+  font-size: 8rem;
+  line-height: 0.75;
+}
+/* ____________________ */
+
+.pines01-img {
+  position: absolute;
+  z-index: 5;
+  width: 2200px;
+  top: calc(50% - 50px);
+  left: calc(50% + 10px);
+  transform: translate(-50%, -50%);
+  /* opacity: 0.9; */
+}
+
+.pines02-img {
+  position: absolute;
+  z-index: 6;
+  width: 2300px;
+  top: calc(50% + 200px);
+  left: calc(50% + 10px);
+  transform: translate(-50%, -50%);
+}
+
+.hut-img {
+  position: absolute;
+  z-index: 7;
+  width: 400px;
+  top: calc(50% + 165px);
+  left: calc(50% + 10px);
+  transform: translate(-50%, -50%);
+}
+
+.fire-img {
+  position: absolute;
+  z-index: 8;
+  width: 300px;
+  top: calc(50% + 240px);
+  left: calc(50% + 10px);
+  transform: translate(-50%, -50%);
+}
