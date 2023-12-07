@@ -23,15 +23,16 @@ window.addEventListener("mousemove", (e) => {
 // GSAP
 // GSAP
 
-let timeline = gsap.timeline();
+// __________________________________________________________________
 
-parallax_el.forEach((el) => {
-  timeline.from(
-    el,
-    {
-      top: `${el.offsetHeight / 2 + el.dataset.distance}px`,
-      duration: 1,
-    },
-    "1"
-  );
-});
+// parallax_el.forEach((el) => {
+//   timeline.from(
+//     el,
+//     {
+//       top: `${el.offsetHeight / 2 + +el.dataset.distance}px`,
+//       duration: 1,
+//     },
+//     "1"
+//   );
+// });
+// __________________________________________________________________
